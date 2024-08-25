@@ -13,16 +13,14 @@ function remove_unnecessary_menu_items() {
  * @return void
  */
 function redirect_user_from_restricted_pages() {
-	if ( is_admin() && ! current_user_can( 'manage_options' ) ) {
-		$current_page     = basename( $_SERVER['PHP_SELF'] );
-		$restricted_pages = array(
-			'themes.php',
-			'site-editor.php',
-		);
-		if ( in_array( $current_page, $restricted_pages ) ) {
-			wp_redirect( admin_url() );
-			exit;
-		}
+	$current_page     = basename( $_SERVER['PHP_SELF'] );
+	$restricted_pages = array(
+		'themes.php',
+		'site-editor.php',
+	);
+	if ( in_array( $current_page, $restricted_pages ) ) {
+		wp_redirect( admin_url() );
+		exit;
 	}
 }
 
