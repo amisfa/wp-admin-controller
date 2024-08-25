@@ -1,3 +1,3 @@
 <?php
 
-//actions for uninstall
+// Actions For Un install Plugin
