@@ -1,0 +1,3 @@
+<?php
+
+//actions for uninstall
