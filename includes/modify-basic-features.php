@@ -1,7 +1,6 @@
 <?php
 
 function remove_unnecessary_menu_items() {
-    remove_menu_page('edit-comments.php'); // Comments
-    remove_menu_page('tools.php'); // Tools
+    remove_submenu_page('themes.php', 'themes.php');
 }
-add_action('admin_menu', 'remove_unnecessary_menu_items');
+add_action('admin_menu', 'remove_unnecessary_menu_items', 999);

@@ -3,7 +3,7 @@
 Plugin Name: LaraWord Admin Controller
 Description: ...
 Version: 1.0
-Author: Your Name
+Author: Rino Team
 */
 
 
